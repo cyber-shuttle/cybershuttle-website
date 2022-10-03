@@ -1,264 +1,309 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCR4WD1JRX"></script>
-        <script>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YCR4WD1JRX"></script>
+    <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-YCR4WD1JRX');
-        </script>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Cyber Shuttle</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
+    </script>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Cyber Shuttle</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png"/>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link href="css/custom.css" rel="stylesheet"/>
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
+    <div class="container px-5">
+        <a class="navbar-brand fw-bold" href="#page-top"><img src="assets/img/cybershuttle-logo.svg" alt=""/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="bi-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
+                <li class="nav-item"><a class="nav-link me-lg-3" href="#">Whitepaper</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="#team">Team</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="https://airavata.apache.org/">Airavata</a></li>
+                <li class="nav-item"><a class="nav-link me-lg-3" href="#">Newsletter</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Mashead header-->
+<header class="masthead">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-lg-7">
+                <!-- Mashead text and app badges-->
+                <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                    <h1 class="display-6 mb-4">Seamlessly shuttling computations and data across a network of scientists
+                        & devices</h1>
+                    <p class="lead fw-normal text-muted mb-5">A reproducible science framework to enable seamless use of<br/>
+                        diverse computational cyberinfrastructure resources <br/>across contributors and devices.</p>
+                    <p class="lead fw-normal mb-5">Cybershuttle is currently in the works. Stay tuned!</p>
+                    <div class="d-flex flex-column flex-lg-row align-items-center gx-2">
+                        <a class="btn btn-primary py-3 px-4" href="https://github.com/apache/airavata">What is
+                            cybershuttle?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <img class="img-fluid" src="assets/img/header-img.svg" alt=""/>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Quote/testimonial aside-->
+<aside class="bg-header1">
+    <div class="container px-5">
+        <div class="row gx-5 justify-content-center">
+            <div class="col-xl-12">
+                <div class="h2 fs-1 text-white mb-4">Cybershuttle will assist users shuttle computations and data from
+                    the user's desktop, workstation, or laptop to resources at the user’s campus, to national resources
+                    like XSEDE and the Open Science Grid, and to commercial computing clouds.
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+<!-- App features section-->
+<section id="features">
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center">
+            <div class="col-12 pb-5 mb-lg-0">
+                <h2 class="sub-heading display-6">Core principles & features</h2>
+            </div>
+            <div class="col-lg-12 order-lg-1 mb-5 mb-lg-0">
+                <div class="container-fluid px-lg-5">
+                    <div class="row gx-5">
+                        <div class="col-md-3 col-sm-6 mb-5">
+                            <!-- Feature item-->
+                            <div>
+                                <img class="py-4" src="assets/img/icon1.svg" width="30%">
+                                <h3 class="font-alt">User Productivity</h3>
+                                <p class="text-muted mb-0 mt-3">Enable individual
+                                    researchers to utilize their unique collections of computing, scientific software,
+                                    and data,
+                                    providing an individual view into research computing resources at all scales</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-5">
+                            <!-- Feature item-->
+                            <div>
+                                <img class="py-4" src="assets/img/icon2.svg" width="30%">
+                                <h3 class="font-alt">Extensibility & Collaborations</h3>
+                                <p class="text-muted mb-0 mt-3">Instead of learning from scratch, modify an existing
+                                    experiment and run it through Cybershuttle </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-5">
+                            <!-- Feature item-->
+                            <div>
+                                <img class="py-4" src="assets/img/icon3.svg" width="30%">
+                                <h3 class="font-alt">Third-Party App Integrations</h3>
+                                <p class="text-muted mb-0 mt-3">Access to synchronized cloud tools to gain deeper
+                                    insights from the data</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-5">
+                            <!-- Feature item-->
+                            <div>
+                                <img class="py-4" src="assets/img/icon4.svg" width="30%">
+                                <h3 class="font-alt">Reproducible Computations</h3>
+                                <p class="text-muted mb-0 mt-3">Shared associated data and experiments captured in the
+                                    system generating quick results</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Basic features section-->
+<section id="team" class="bg-light">
+    <div class="container px-5">
+        <div class="row">
+            <h2 class="sub-heading display-6 mb-5">Our Team and Expertise</h2>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card text-white">
+                    <img class="card-img" src="assets/img/img-01.png" alt="">
+                    <div class="card-img-overlay d-flex align-items-end">
+                        <h5 class="card-title">Neuroscience</h5>
+                    </div>
+                    <div class="hidden-card-content">
+                        <h5 class="fw-bolder">Principal Investigator</h5>
+                        <p>Giri Krishnan, UCSD</p>
+                        <h5 class="fw-bolder mt-3">Team</h5>
+                        <p>Maxim Bazenhov, UCSD</p>
+                        <p>Amitava Majumdar, UCSD</p>
+                        <p>Anton Akhripov, Allen Institute</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card text-white">
+                    <img class="card-img" src="assets/img/img-02.png" alt="">
+                    <div class="card-img-overlay d-flex align-items-end">
+                        <h5 class="card-title">Molecular sciences</h5>
+                    </div>
+                    <div class="hidden-card-content">
+                        <h5 class="fw-bolder">Principal Investigator</h5>
+                        <p>Emad Tajkhorshid, UIUC</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card text-white">
+                    <img class="card-img" src="assets/img/img-03.png" alt="">
+                    <div class="card-img-overlay d-flex align-items-end">
+                        <h5 class="card-title">Engineering</h5>
+                    </div>
+                    <div class="hidden-card-content">
+                        <h5 class="fw-bolder">Principal Investigator</h5>
+                        <p>Seid Koric, UIUC</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="card text-white">
+                    <img class="card-img" src="assets/img/img-04.png" alt="">
+                    <div class="card-img-overlay d-flex align-items-end">
+                        <h5 class="card-title">CyberInfrastructure</h5>
+                    </div>
+                    <div class="hidden-card-content">
+                        <h5 class="fw-bolder">Principal Investigator</h5>
+                        <p>Suresh Marru, IU</p>
+                        <h5 class="fw-bolder mt-3">Team</h5>
+                        <p>Marlon Pierce, IU</p>
+                        <p>Jim Basney, UIUC</p>
+                        <p>Shava Smallen, UCSD</p>
+                        <p>Beth Pale, IU</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- collaboration -->
+<section class="bg-light">
+    <div class="container px-5">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="sub-heading display-6 lh-1">Collaboration</h2>
+            </div>
+            <div class="col-8 offset-2">
+                <img src="assets/img/collaboration.png" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- funded -->
+<section>
+    <div class="container px-5">
+        <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+            <div class="col-lg-8 col-md-7 col-sm-12">
+                <h2 class="sub-heading display-6 lh-1 mb-5">We are funded</h2>
+                <h2 class="lh-1 display-6 mb-5 mb-lg-0">Cybershuttle is supported by the National Science Foundation
+                    (NSF) under the following grants</h2>
+                <div class="row">
+                    <div class="col-4 py-5">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i>
+                                CSSI-2209872
+                            </li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i>
+                                CSSI-2209873
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4 py-5">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i>
+                                CSSI-2209874
+                            </li>
+                            <li class="list-group-item"><i class="bi bi-check-circle-fill text-success"></i>
+                                CSSI-2209875
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-5 col-sm-12 text-center">
+                <div class="px-5 px-sm-0">
+                    <img width="250" src="assets/img/nsf.png" alt=""/>
+                    <p class="pt-3">National Science Foundation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- App badge section-->
+<div class="container px-5">
+    <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+        <div class="col-lg-8 col-md-7 col-sm-12">
+            <h2 class="sub-heading display-6 lh-1 mb-5">Join the community</h2>
+        </div>
+    </div>
+</div>
+<section class="bg-header2" id="download">
+    <div class="container px-5">
+        <div class="col-12">
+            <h2 class="text-white font-alt text-center mb-4">Cybershuttle is an open source and open community project.
+                We would love for you to join us! Want to sign up for our newsletter to stay updated on our effort?</h2>
+            <!--<form class="form-inline">
+                <div class="row d-flex justify-content-center mt-4">
+                    <div class="col-4">
+                        <input type="email" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
+                               placeholder="Enter your Email here">
+                    </div>
+                    <div class="col-1">
+                        <button type="submit" class="btn btn-primary mb-2">Sign Up</button>
+                    </div>
 
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <link href="css/custom.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-            <div class="container px-5">
-                <a class="navbar-brand fw-bold" href="#page-top"><img width="45%" src="assets/img/logo-cybershuttle.png" alt=""/></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="bi-list"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#">Whitepaper</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#">Team</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="https://airavata.apache.org/">Airavata</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#">Newsletter</a></li>
-                    </ul>
                 </div>
-            </div>
-        </nav>
-        <!-- Mashead header-->
-        <header class="masthead">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-lg-6">
-                        <!-- Mashead text and app badges-->
-                        <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-4 lh-1 mb-3">Seamlessly shuttling computations and data across a network of scientists & devices</h1>
-                            <p class="lead fw-normal text-muted mb-5">A reproducible science framework to enable seamless use of diverse computational cyberinfrastructure resources across contributors and devices.</p>
-                            <p class="lead fw-normal mb-5">Cybershuttle is currently in the works. Stay tuned!</p>
-                            <div class="d-flex flex-column flex-lg-row align-items-center gx-2">
-                                <a class="btn btn-primary py-3 px-4" href="https://github.com/apache/airavata">What is cybershuttle?</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid" src="assets/img/header-img.svg" alt=""/>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Quote/testimonial aside-->
-        <aside class="text-center bg-header1">
-            <div class="container px-5">
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-xl-12">
-                        <div class="h2 fs-1 text-white mb-4">Cybershuttle will assist users shuttle computations and data from the user's desktop, workstation, or laptop to resources at the user’s campus, to national resources like XSEDE and the Open Science Grid, and to commercial computing clouds.</div>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <!-- App features section-->
-        <section id="features">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <div class="col-12 pb-5 mb-lg-0">
-                        <h2 class="sub-heading display-5">Core principles & features</h2>
-                    </div>
-                    <div class="col-lg-12 order-lg-1 mb-5 mb-lg-0">
-                        <div class="container-fluid px-5">
-                            <div class="row gx-5">
-                                <div class="col-md-3 mb-5">
-                                    <!-- Feature item-->
-                                    <div class="text-center">
-                                        <i class="bi-people icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">User Productivity</h3>
-                                        <p class="text-muted mb-0">Enable individual
-                                            researchers to utilize their unique collections of computing, scientific software, and data,
-                                            providing an individual view into research computing resources at all scales</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 mb-5">
-                                    <!-- Feature item-->
-                                    <div class="text-center">
-                                        <i class="bi-box-arrow-up-right icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Extensibility & Collaborations</h3>
-                                        <p class="text-muted mb-0">Instead of learning from scratch, modify an existing experiment and run it through Cybershuttle </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 mb-5">
-                                    <!-- Feature item-->
-                                    <div class="text-center">
-                                        <i class="bi-app-indicator icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Third-Party App Integrations</h3>
-                                        <p class="text-muted mb-0">Access to synchronized cloud tools to gain deeper insights from the data</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 mb-5">
-                                    <!-- Feature item-->
-                                    <div class="text-center">
-                                        <i class="bi-gear-wide-connected icon-feature text-gradient d-block mb-3"></i>
-                                        <h3 class="font-alt">Reproducible Computations</h3>
-                                        <p class="text-muted mb-0">Shared associated data and experiments captured in the system generating quick results</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Basic features section-->
-        <section class="bg-light">
-            <div class="container px-5">
-                <div class="row">
-                    <h2 class="sub-heading display-5 mb-5">Our Team and Expertise</h2>
-                    <div class="col-md-3">
-                        <div class="card profile-card-3">
-                            <h4 class="card-title pt-3">Neuroscience</h4>
-                            <div class="background-block pt-5">
-                                <img src="assets/img/img-01.png" class="background"/>
-                            </div>
-                            <div class="card-content">
-                                <h2>Giri Krishnan, UCSD<small>Principal Investigator</small></h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card profile-card-3">
-                            <h4 class="card-title pt-3">Molecular sciences</h4>
-                            <div class="background-block pt-5">
-                                <img src="assets/img/img-02.png" class="background"/>
-                            </div>
-                            <div class="card-content">
-                                <h2>Emad Tajkhorshid, UIUC<small>Principal Investigator</small></h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card profile-card-3">
-                            <h4 class="card-title pt-3">Engineering</h4>
-                            <div class="background-block pt-5">
-                                <img src="assets/img/img-03.png" class="background"/>
-                            </div>
-                            <div class="card-content">
-                                <h2>Seid Koric, UIUC<small>Principal Investigator</small></h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card profile-card-3">
-                            <h4 class="card-title pt-3">CyberInfrastructure</h4>
-                            <div class="background-block pt-5">
-                                <img src="assets/img/img-04.png" class="background"/>
-                            </div>
-                            <div class="card-content">
-                                <h2>Suresh Marru, IU<small>Principal Investigator</small></h2>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- collaboration -->
-        <section class="bg-light">
-            <div class="container px-5">
-                <div class="row">
-                    <div class="col-12">
-                    <h2 class="sub-heading display-5 lh-1">Collaboration</h2>
-                    </div>
-                    <div class="col-8 offset-2">
-                    <img src="assets/img/collaboration.png" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- funded -->
-        <section>
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-lg-8 col-md-7 col-sm-12">
-                        <h2 class="sub-heading display-5 lh-1 mb-5">We are funded</h2>
-                        <h2 class="lh-1 mb-5 mb-lg-0">Cybershuttle is supported by the National Science Foundation (NSF) under the following grants</h2>
-                        <div class="row">
-                            <div class="col-4 py-5">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"> <i class="bi bi-check-circle-fill text-success"></i> CSSI-2209872</li>
-                                    <li class="list-group-item"> <i class="bi bi-check-circle-fill text-success"></i> CSSI-2209873</li>
-                                </ul>
-                            </div>
-                            <div class="col-4 py-5">
-                                <ul class="list-group list-group-flush">
-                                    <li class="list-group-item"> <i class="bi bi-check-circle-fill text-success"></i> CSSI-2209874</li>
-                                    <li class="list-group-item"> <i class="bi bi-check-circle-fill text-success"></i> CSSI-2209875</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-5 col-sm-12 text-center">
-                        <div class="px-5 px-sm-0">
-                            <img width="250" src="assets/img/nsf.png" alt=""/>
-                            <p class="pt-3">National Science Foundation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- App badge section-->
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-lg-8 col-md-7 col-sm-12">
-                        <h2 class="sub-heading display-5 lh-1 mb-5">Join the community</h2>
-                    </div>
-                </div>
-            </div>
-        <section class="bg-header2" id="download">
-            <div class="container px-5">
-                <div class="col-12">
-                    <h2 class="text-white font-alt text-center mb-4">Cybershuttle is an open source and open community project. We would love for you to join us! Want to sign up for our newsletter to stay updated on our effort?</h2>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="bg-black text-center py-5">
-            <div class="container px-5">
-                <div class="text-white-50 small">
-                    <div class="mb-2">&copy; CyberShuttle 2022. All Rights Reserved.</div>
-                </div>
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+            </form>-->
+        </div>
+    </div>
+</section>
+<!-- Footer-->
+<footer class="text-center py-5">
+    <div class="container px-5">
+        <div class="small">
+            <div class="mb-2">&copy; CyberShuttle 2022. All Rights Reserved.</div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<!-- * *                               SB Forms JS                               * *-->
+<!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
 </html>
